@@ -1,0 +1,138 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Rodapé */
+  .rodape {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0 20px 0;
+    line-height: 1.5;
+  }
+  
+  /* Container Principal */
+  .rodape-container {
+    display: flex;            /* Ativa Flexbox */
+    flex-direction: row;      /* Alinha os itens em linha */
+    justify-content: center;  /* Centraliza todos os elementos na horizontal */
+    align-items: center;      /* Centraliza verticalmente os itens */
+    width: 100%;              /* Ocupa toda a largura */
+    gap: 30px;                /* Espaçamento entre os elementos */
+    flex-wrap: nowrap;        /* Evita quebra de linha */
+  }
+  
+  
+  .rodape-section {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+  }
+  .img {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 auto; /* Centraliza em relação ao container pai */
+    max-width: 200px; /* Garante que o tamanho da imagem esteja controlado */
+  }
+  
+  .img img {
+    width: 100%; /* A imagem ocupa toda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  
+  
+  .rodape-section h3 {
+    font-size: 18px;
+   
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: #00e5ff;
+  }
+  
+  .rodape-section p {
+    margin: 10px 0;
+  }
+  
+  .rodape-section a {
+    text-decoration: none;
+    color: #00bcd4;
+    transition: color 0.3s;
+  }
+  
+  .rodape-section a:hover {
+    color: #00e5ff;
+  }
+  
+  /* Contatos */
+  .contatos .logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+  .img{
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+  
+  /* Links e Redes Sociais */
+  .redes-sociais {
+    margin-top: 15px;
+  }
+  
+  .redes-sociais a img {
+    width: 28px;
+    height: 28px;
+    margin: 0 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .redes-sociais a:hover img {
+    transform: scale(1.2);
+  }
+  
+  /* Newsletter */
+  .newsletter form {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+  }
+  
+  .newsletter input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .newsletter button {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter button:hover {
+    background-color: #00e5ff;
+  }
+  
+  /* Parte Inferior */
+  .rodape-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding: 15px 20px 0;
+    font-size: 14px;
+  }
+  
+  .rodape-bottom p {
+    margin: 0;
+  }
+  

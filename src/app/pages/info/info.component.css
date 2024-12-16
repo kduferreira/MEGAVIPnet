@@ -1,0 +1,57 @@
+/* Remover margem e padding geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container principal */
+  .info-container {
+    display: flex; /* Alinha os elementos em linha */
+    flex-direction: row; /* Mantém os itens na horizontal */
+    justify-content: space-between; /* Distribui igualmente */
+    align-items: stretch; /* Garante altura igual */
+    width: 100%;
+    height: 100vh; /* Altura total da viewport */
+  }
+  
+  /* Estilo das colunas */
+  .info-image,
+  .info-content,
+  .content-speed {
+    flex: 1; /* Cada bloco ocupa o mesmo espaço */
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Imagens */
+  .info-image img {
+    width: 100%; /* Imagem ocupa toda a largura */
+    height: 100%; /* Imagem ocupa toda a altura */
+    object-fit: cover; /* Ajusta a imagem para cobrir o bloco sem deformar */
+    display: block;
+  }
+  
+  /* Conteúdo */
+  .info-content,
+  .content-speed {
+    background-color: #009ee3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    padding: 2rem;
+  }
+  
+  .info-content h2,
+  .content-speed h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info-content p,
+  .content-speed p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  

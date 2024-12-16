@@ -1,0 +1,20 @@
+<div class="carousel-container">
+    <h2>
+      Seja um de nossos <span class="highlight">Colaboradores</span>
+    </h2>
+    <p class="subtitle">Internet de qualidade para clientes satisfeitos.</p>
+  
+    <!-- Carrossel -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <!-- Imagens duplicadas -->
+        <div
+          class="carousel-item"
+          *ngFor="let empresa of empresas.concat(empresas)"
+        >
+          <img [src]="empresa.logo" [alt]="empresa.nome" />
+        </div>
+      </div>
+    </div>
+  </div>
+  

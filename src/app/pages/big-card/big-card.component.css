@@ -1,0 +1,81 @@
+.big-card {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  
+    .carousel {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 400px;
+  
+      .carousel-item {
+        min-width: 100%;
+        transition: transform 0.5s ease-in-out;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+  
+        &.active {
+          opacity: 1;
+          position: relative;
+          transform: translateX(0);
+        }
+  
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+  
+        .carousel-caption {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+  
+          h2 {
+            margin: 0;
+            font-size: 24px;
+          }
+  
+          p {
+            margin: 0;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 1;
+  
+      &:hover {
+        background: black;
+      }
+    }
+  
+    .prev {
+      left: 10px;
+    }
+  
+    .next {
+      right: 10px;
+    }
+  }
+  

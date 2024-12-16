@@ -1,0 +1,17 @@
+.menu {
+    
+    background-color: #222; 
+
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    box-shadow: 100px 100px 200px rgba(0, 0, 0, 0.5); /* sombra */
+    padding-bottom: 8em;
+  }
+  
+  .reserva{
+    background-color: #1E1E1C;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+  }

@@ -1,0 +1,38 @@
+.header-top {
+    background-color: #007bff; /* Cor azul */
+    color: white;
+    padding: 5px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos para os extremos */
+    align-items: center;
+  
+    .contact-info {
+      display: flex;
+      gap: 20px;
+  
+      span {
+        display: flex;
+        align-items: center;
+  
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  
+    .central-btn {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #333;
+      }
+    }
+  }
+  

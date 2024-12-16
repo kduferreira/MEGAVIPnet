@@ -1,0 +1,78 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sac-container {
+  background-color: #008dd1; /* Fundo azul */
+  color: #ffffff; /* Texto branco */
+  display: flex; /* Alinha elementos em linha */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 70px; /* Espaçamento entre elementos */
+  padding: 20px;
+  flex-wrap: wrap; /* Garante que os elementos quebrem linha se necessário */
+}
+
+/* Título */
+.sac-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Cada item */
+.sac-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.text {
+  text-align: left;
+}
+
+.label {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.contact {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Botão */
+.sac-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.sac-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222; /* Fundo escuro */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sac-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.sac-button:hover {
+  background-color: #00bfa5; /* Verde do WhatsApp */
+}

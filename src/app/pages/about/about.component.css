@@ -1,0 +1,29 @@
+.about-container {
+    text-align: center; /* Centraliza o texto */
+    padding: 20px;
+  }
+  .about-container p{
+    color: #CECECE;
+  }
+  
+  .dynamic-text {
+    color: #ffffff; /* Cor azul */
+    background-color: #007bff;
+    font-weight: bold; /* Negrito */
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 20px; /* Espaço acima */
+  }
+  
+  .icons img {
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    width: 70%; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+   
+  }
+  

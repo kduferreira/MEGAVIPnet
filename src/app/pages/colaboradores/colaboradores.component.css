@@ -1,0 +1,57 @@
+/* Container principal */
+.carousel-container {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .subtitle {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Carrossel */
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    width: fit-content; /* Tamanho automático para acomodar todas as imagens */
+    animation: slideLeft 20s linear infinite; /* Movimento contínuo */
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 200px; /* Largura das imagens */
+    margin: 0 20px; /* Espaço entre as imagens */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animação contínua */
+  @keyframes slideLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%); /* Move metade da largura duplicada */
+    }
+  }
+  

@@ -1,29 +1,36 @@
 .about-container {
-    text-align: center; /* Centraliza o texto */
-    padding: 20px;
-  }
-  .about-container p{
-    color: #CECECE;
-  }
-  
-  .dynamic-text {
-    color: #ffffff; /* Cor azul */
-    background-color: #007bff;
-    font-weight: bold; /* Negrito */
-  }
-  
-  .icons {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    margin-top: 20px; /* Espaço acima */
-  }
-  
-  .icons img {
-    max-width: 100%; /* Garante que a imagem seja responsiva */
-    width: 70%; /* Ajuste o tamanho da imagem */
-    height: auto; /* Mantém a proporção */
-    border-radius: 10px; /* Bordas arredondadas (opcional) */
-   
-  }
-  
+  text-align: center; /* Centraliza o texto */
+  padding: 20px;
+}
+
+.about-container h1 {
+  font-size: 2rem; /* Tamanho base */
+}
+
+.about-container p {
+  color: #CECECE;
+  font-size: 1rem; /* Tamanho padrão */
+}
+
+.dynamic-text {
+  color: #ffffff; /* Texto branco */
+  background-color: #007bff; /* Fundo azul */
+  font-weight: bold; /* Negrito */
+  padding: 0 5px; /* Espaçamento interno */
+}
+
+.icons {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 20px; /* Espaço acima */
+}
+
+.icons img {
+  max-width: 100%; /* Garante que a imagem seja responsiva */
+  width: 70%; /* Ajusta o tamanho da imagem */
+  height: auto; /* Mantém a proporção */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+

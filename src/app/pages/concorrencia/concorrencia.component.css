@@ -1,65 +1,99 @@
 .comparison-container {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    padding: 50px; /* Adiciona espaçamento ao redor do componente */
-  }
-  
-  .highlight {
-    color: #0078d4;
-    font-weight: bold;
-    font-size: 26px; /* Ajusta o tamanho do texto "Downloads" */
-  }
-  
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+
+.highlight {
+  color: #0078d4;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.comparison-items {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  flex-wrap: wrap; /* Permite empilhamento em telas menores */
+}
+
+.item {
+  text-align: center;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #0078d4;
+  position: relative;
+  background: conic-gradient(
+    #0078d4 calc(var(--percentage, 100) * 1%), 
+    #ddd calc(var(--percentage, 100) * 1%)
+  );
+}
+
+.circle span {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  width: 85%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.circle.complete {
+  background: #0078d4;
+  color: white;
+}
+
+.partial {
+  background: conic-gradient(
+    #0078d4 calc(var(--percentage, 100) * 1%), 
+    #ddd calc(var(--percentage, 100) * 1%)
+  );
+}
+
+/* Responsividade para tablets e dispositivos menores */
+@media (max-width: 1024px) {
   .comparison-items {
-    display: flex;
-    justify-content: center;
-    gap: 60px; /* Aumenta o espaço entre os círculos */
-    margin-top: 50px;
-  }
-  
-  .item {
-    text-align: center;
+    gap: 30px;
   }
   
   .circle {
-    width: 200px; /* Aumenta o tamanho dos círculos */
-    height: 200px; /* Aumenta o tamanho dos círculos */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    font-size: 20px; /* Ajusta o tamanho do texto no círculo */
-    color: #0078d4;
-    position: relative;
-    background: conic-gradient(
-      #0078d4 calc(var(--percentage, 100) * 1%), 
-      #ddd calc(var(--percentage, 100) * 1%)
-    );
+    width: 150px;
+    height: 150px;
+    font-size: 16px;
   }
-  
+
   .circle span {
-    position: absolute;
-    background: white;
-    border-radius: 50%;
-    width: 85%;
-    height: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 18px; /* Ajusta o tamanho do texto interno */
+    font-size: 14px;
   }
-  
-  .circle.complete {
-    background: #0078d4;
-    color: white;
+}
+
+@media (max-width: 768px) {
+  .comparison-items {
+    flex-direction: column;
+    gap: 20px;
   }
-  
-  .partial {
-    background: conic-gradient(
-      #0078d4 calc(var(--percentage, 100) * 1%), 
-      #ddd calc(var(--percentage, 100) * 1%)
-    );
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    font-size: 14px;
   }
-  
+
+  .circle span {
+    font-size: 12px;
+  }
+}

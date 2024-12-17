@@ -1,0 +1,73 @@
+/* chamezap.responsive.css */
+
+/* Responsividade para telas até 1024px (tablets e telas grandes) */
+@media (max-width: 1024px) {
+    .chame-zap-container {
+      flex-direction: column; /* Coloca os itens em coluna */
+      align-items: center; /* Centraliza os itens */
+      padding: 20px; /* Ajusta o padding */
+    }
+  
+    .text-content h2 {
+      font-size: 18px; /* Ajusta o tamanho do título */
+      text-align: center; /* Centraliza o título */
+    }
+  
+    .text-content p {
+      font-size: 14px; /* Ajusta o tamanho do parágrafo */
+      text-align: center; /* Centraliza o parágrafo */
+    }
+  
+    .button-content .zap-button {
+      width: 100%; /* Faz o botão ocupar toda a largura disponível */
+      padding: 12px 20px; /* Ajusta o padding */
+      font-size: 16px; /* Aumenta o tamanho da fonte */
+      text-align: center; /* Centraliza o texto do botão */
+    }
+  
+    .button-content .zap-button i {
+      font-size: 20px; /* Ajusta o tamanho do ícone */
+    }
+  }
+  
+  /* Responsividade para telas até 768px (tablets menores) */
+  @media (max-width: 768px) {
+    .chame-zap-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .text-content h2 {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .text-content p {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .button-content .zap-button {
+      width: 100%;
+      padding: 12px 20px;
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .button-content .zap-button i {
+      font-size: 20px;
+    }
+  }
+  
+  /* Responsividade para telas até 480px (smartphones) */
+  @media (max-width: 480px) {
+    .text-content h2 {
+      font-size: 16px;
+    }
+  
+    .text-content p {
+      font-size: 12px;
+    }
+  }
+  

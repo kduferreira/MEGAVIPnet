@@ -1,57 +1,98 @@
-/* Container principal */
+/* Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .carousel-container {
-    text-align: center;
-    overflow: hidden;
-    width: 100%;
-    background-color: #f9f9f9;
-    padding: 20px 0;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 10px;
+}
+
+/* Título */
+.carousel-container h2 {
+  font-size: clamp(1.8rem, 2vw, 2.5rem); /* Tamanho dinâmico */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.carousel-container .subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Carrossel */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(200px * 10); /* Ajuste conforme a quantidade de imagens duplicadas */
+  animation: slideLeft 20s linear infinite; /* Animação contínua */
+}
+
+/* Itens do Carrossel */
+.carousel-item {
+  flex: 0 0 auto;
+  width: 200px; /* Largura fixa padrão */
+  margin: 0 15px; /* Espaço entre imagens */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animação */
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
   }
-  
-  h2 {
-    font-size: 2rem;
-    color: #333;
+  to {
+    transform: translateX(-50%); /* Move metade da largura duplicada */
   }
-  
-  .subtitle {
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  /* Carrossel */
-  .carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
+}
+
+/* Responsividade para Tablets */
+@media (max-width: 1024px) {
   .carousel-track {
-    display: flex;
-    width: fit-content; /* Tamanho automático para acomodar todas as imagens */
-    animation: slideLeft 20s linear infinite; /* Movimento contínuo */
+    animation-duration: 15s; /* Acelera o carrossel */
   }
-  
+
   .carousel-item {
-    flex: 0 0 auto;
-    width: 200px; /* Largura das imagens */
-    margin: 0 20px; /* Espaço entre as imagens */
+    width: 150px; /* Reduz o tamanho dos itens */
+    margin: 0 10px;
   }
-  
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade para Smartphones */
+@media (max-width: 768px) {
+  .carousel-container h2 {
+    font-size: 1.5rem; /* Reduz o tamanho do título */
   }
-  
-  /* Animação contínua */
-  @keyframes slideLeft {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%); /* Move metade da largura duplicada */
-    }
+
+  .carousel-container .subtitle {
+    font-size: 0.9rem;
   }
-  
+
+  .carousel-track {
+    animation-duration: 10s; /* Acelera ainda mais em telas pequenas */
+  }
+
+  .carousel-item {
+    width: 120px; /* Imagens menores */
+    margin: 0 5px; /* Espaçamento menor */
+  }
+}

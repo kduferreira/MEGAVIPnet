@@ -1,0 +1,64 @@
+/* big-card.responsive.css */
+
+/* Responsividade para telas menores que 1024px */
+@media (max-width: 1024px) {
+  .big-card .carousel {
+    height: 350px; /* Ajusta a altura para telas grandes e tablets */
+  }
+
+  .big-card .carousel-caption h2 {
+    font-size: 20px; /* Ajusta o título */
+  }
+
+  .big-card .carousel-caption p {
+    font-size: 14px; /* Ajusta a descrição */
+  }
+
+  .big-card .prev,
+  .big-card .next {
+    font-size: 16px; /* Ajusta o tamanho dos botões */
+    padding: 8px;
+  }
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+  .big-card .carousel {
+    height: 250px; /* Ajusta a altura para tablets menores */
+  }
+
+  .big-card .carousel-caption h2 {
+    font-size: 18px; /* Reduz o tamanho do título */
+  }
+
+  .big-card .carousel-caption p {
+    font-size: 12px; /* Reduz o tamanho da descrição */
+  }
+
+  .big-card .prev,
+  .big-card .next {
+    font-size: 14px; /* Ajusta os botões */
+    padding: 6px;
+  }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+  .big-card .carousel {
+    height: 200px; /* Ajusta a altura para smartphones */
+  }
+
+  .big-card .carousel-caption h2 {
+    font-size: 16px; /* Ajusta o título */
+  }
+
+  .big-card .carousel-caption p {
+    font-size: 10px; /* Ajusta a descrição */
+  }
+
+  .big-card .prev,
+  .big-card .next {
+    font-size: 12px; /* Ajusta os botões */
+    padding: 5px;
+  }
+}

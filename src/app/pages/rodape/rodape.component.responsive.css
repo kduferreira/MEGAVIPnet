@@ -1,0 +1,86 @@
+@media (max-width: 1024px) {
+    .rodape-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .img {
+        max-width: 180px;
+    }
+
+    .rodape-section h3 {
+        font-size: 16px;
+    }
+
+    .rodape-section p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rodape-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        max-width: 150px;
+    }
+
+    .rodape-section {
+        min-width: 100%;
+    }
+
+    .rodape-section h3 {
+        font-size: 16px;
+    }
+
+    .rodape-section p {
+        font-size: 14px;
+    }
+
+    .redes-sociais a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .newsletter input {
+        padding: 10px;
+    }
+
+    .newsletter button {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rodape-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        max-width: 120px;
+    }
+
+    .rodape-section {
+        min-width: 100%;
+    }
+
+    .rodape-section h3 {
+        font-size: 14px;
+    }
+
+    .rodape-section p {
+        font-size: 12px;
+    }
+
+    .newsletter input {
+        padding: 8px;
+    }
+
+    .newsletter button {
+        padding: 8px 12px;
+    }
+}

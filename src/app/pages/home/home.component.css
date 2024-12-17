@@ -1,17 +1,40 @@
 .menu {
-    
-    background-color: #222; 
+  background-color: #222;
+  background-size: cover;
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra ajustada */
+  padding-bottom: 8em;
+  text-align: center; /* Centraliza o conteúdo em telas pequenas */
+}
 
-    background-size: cover;
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat;
-    box-shadow: 100px 100px 200px rgba(0, 0, 0, 0.5); /* sombra */
-    padding-bottom: 8em;
+.reserva {
+  background-color: #1E1E1C;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Torna o conteúdo flexível e quebra em telas pequenas */
+  gap: 1em; /* Espaçamento entre os elementos */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .menu {
+      padding-bottom: 4em; /* Reduz o padding em telas menores */
   }
-  
-  .reserva{
-    background-color: #1E1E1C;
-    padding: 2em;
-    display: flex;
-    justify-content: center;
+
+  .reserva {
+      flex-direction: column; /* Alinha os elementos em coluna */
+      padding: 1em; /* Reduz o padding */
   }
+}
+
+@media (max-width: 480px) {
+  .menu {
+      padding-bottom: 2em; /* Padding ainda menor em telas muito pequenas */
+  }
+
+  .reserva {
+      padding: 0.5em; /* Ajuste para telas bem pequenas */
+  }
+}

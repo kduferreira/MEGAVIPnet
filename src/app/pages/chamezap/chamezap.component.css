@@ -1,41 +1,44 @@
 .chame-zap-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222;
-    color: white;
-    padding: 20px;
-  }
-  
-  .text-content h2 {
-    font-size: 20px;
-    margin: 0;
-    color: #fff;
-  }
-  
-  .text-content p {
-    margin: 5px 0 0;
-    color: #ccc;
-  }
-  
-  .button-content .zap-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-  
-  .button-content .zap-button i {
-    font-size: 18px;
-    margin-right: 8px;
-  }
-  
-  .button-content .zap-button:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+/* Estilos para o texto */
+.text-content h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+}
+
+.text-content p {
+  margin: 5px 0 0;
+  color: #ccc;
+}
+
+/* Botão */
+.button-content .zap-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.button-content .zap-button i {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.button-content .zap-button:hover {
+  background-color: #0056b3;
+}
+

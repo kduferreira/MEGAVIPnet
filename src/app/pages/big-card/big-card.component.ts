@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-big-card',
   templateUrl: './big-card.component.html',
-  styleUrls: ['./big-card.component.css'],
+  styleUrls: ['./big-card.component.css', './big-card.responsive.css'], // Certifique-se de que os dois CSS estão importados
 })
 export class BigCardComponent {
   slides = [
@@ -17,7 +17,6 @@ export class BigCardComponent {
     },
     {
       image: '../../../assets/images/carrossel3.png',
-     
       alt: 'Slide 3',
     },
   ];

@@ -1,0 +1,49 @@
+/* Telas menores que 1024px (Laptops pequenos e tablets) */
+@media (max-width: 1024px) {
+    .header-top {
+      flex-direction: column; /* Alinha os itens em coluna */
+      align-items: center; /* Centraliza os itens */
+      text-align: center;
+    }
+  
+    .contact-info {
+      justify-content: center;
+      margin-bottom: 10px; /* Espaço entre as informações de contato e o botão */
+      gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+  
+    .central-btn {
+      padding: 8px 15px; /* Ajusta o tamanho do botão */
+      font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+  }
+  
+  /* Telas menores que 768px (Tablets e celulares maiores) */
+  @media (max-width: 768px) {
+    .header-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .contact-info {
+      margin-bottom: 10px;
+    }
+  
+    .central-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  /* Telas menores que 480px (Celulares pequenos) */
+  @media (max-width: 480px) {
+    .contact-info span {
+      font-size: 12px;
+    }
+  
+    .central-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  

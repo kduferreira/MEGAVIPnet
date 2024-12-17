@@ -1,0 +1,45 @@
+/* Responsividade para telas menores que 1024px */
+@media (max-width: 1024px) {
+    .about-container h1 {
+      font-size: 1.8rem; /* Ajusta o tamanho do título para telas menores */
+    }
+  
+    .about-container p {
+      font-size: 0.9rem; /* Ajusta o tamanho da descrição */
+    }
+  
+    .icons img {
+      width: 80%; /* Ajusta o tamanho da imagem */
+    }
+  }
+  
+  /* Responsividade para telas menores que 768px */
+  @media (max-width: 768px) {
+    .about-container h1 {
+      font-size: 1.6rem; /* Ajusta o tamanho do título para tablets menores */
+    }
+  
+    .about-container p {
+      font-size: 0.85rem; /* Ajusta o tamanho da descrição */
+    }
+  
+    .icons img {
+      width: 90%; /* Ajusta o tamanho da imagem */
+    }
+  }
+  
+  /* Responsividade para telas menores que 480px */
+  @media (max-width: 480px) {
+    .about-container h1 {
+      font-size: 1.4rem; /* Ajusta o tamanho do título para smartphones */
+    }
+  
+    .about-container p {
+      font-size: 0.8rem; /* Ajusta o tamanho da descrição */
+    }
+  
+    .icons img {
+      width: 100%; /* Ajusta o tamanho da imagem */
+    }
+  }
+  

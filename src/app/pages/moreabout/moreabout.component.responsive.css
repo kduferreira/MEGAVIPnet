@@ -1,0 +1,67 @@
+/* Responsividade para telas de até 1024px */
+@media (max-width: 1024px) {
+    .moreabout-container {
+      flex-direction: column; /* Empilha os elementos */
+      align-items: center;
+      padding: 2rem;
+    }
+  
+    .text-section {
+      padding-right: 0;
+      text-align: center;
+    }
+  
+    .image-section img {
+      max-width: 300px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .highlight {
+      font-size: 1.6rem;
+    }
+  
+    .subtitle {
+      font-size: 1.6rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .contact-button {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Responsividade para telas de até 768px */
+  @media (max-width: 768px) {
+    .moreabout-container {
+      padding: 1rem;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    .highlight {
+      font-size: 1.4rem;
+    }
+  
+    .subtitle {
+      font-size: 1.4rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  
+    .contact-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
+  

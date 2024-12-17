@@ -1,0 +1,69 @@
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .streaming-container {
+      flex-direction: column; /* Empilha os elementos verticalmente */
+      align-items: center; /* Centraliza o conteúdo */
+      text-align: center;
+    }
+  
+    .streaming-text,
+    .streaming-image {
+      max-width: 100%; /* Ocupa toda a largura */
+    }
+  
+    .streaming-text p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Celulares grandes (max-width: 768px) */
+  @media (max-width: 768px) {
+    .streaming-container {
+      padding: 20px;
+    }
+  
+    .streaming-text p {
+      font-size: 1rem; /* Reduz o tamanho do texto */
+      margin-bottom: 15px;
+    }
+  
+    .button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    .streaming-gif {
+      top: 10%; /* Ajusta a posição do GIF */
+      left: 10%;
+      width: 80%;
+      height: 65%;
+    }
+  }
+  
+  /* Celulares pequenos (max-width: 480px) */
+  @media (max-width: 480px) {
+    .streaming-container {
+      padding: 15px;
+    }
+  
+    .streaming-text .title-image {
+      margin-bottom: 10px;
+    }
+  
+    .streaming-text p {
+      font-size: 0.9rem;
+    }
+  
+    .button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  
+    .streaming-gif {
+      top: 12%;
+      left: 10%;
+      width: 80%;
+      height: 60%;
+    }
+  }
+  

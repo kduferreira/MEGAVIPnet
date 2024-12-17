@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-moreabout',
   templateUrl: './moreabout.component.html',
-  styleUrls: ['./moreabout.component.css']
+  styleUrls: ['./moreabout.component.css', './moreabout.component.responsive.css']
 })
 export class MoreaboutComponent implements OnInit {
   texts: string[] = ['Videos', 'Redes Sociais', 'Jogos', 'Filmes'];

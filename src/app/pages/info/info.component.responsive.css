@@ -1,0 +1,51 @@
+/* Responsividade */
+@media (max-width: 1024px) {
+    .info-container {
+      flex-direction: column; /* Empilha os elementos */
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .info-image img {
+      width: 90%; /* Ajusta a largura das imagens */
+    }
+  
+    .info-content,
+    .content-speed {
+      min-height: 250px; /* Ajusta altura mínima */
+      width: 90%; /* Ajusta largura para telas menores */
+    }
+  
+    .info-content h2,
+    .content-speed h2 {
+      font-size: 1.5rem;
+    }
+  
+    .info-content p,
+    .content-speed p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Responsividade para dispositivos menores */
+  @media (max-width: 768px) {
+    .info-container {
+      padding: 15px;
+    }
+  
+    .info-content,
+    .content-speed {
+      padding: 1.5rem; /* Ajusta o padding */
+    }
+  
+    .info-content h2,
+    .content-speed h2 {
+      font-size: 1.4rem;
+    }
+  
+    .info-content p,
+    .content-speed p {
+      font-size: 0.9rem;
+    }
+  }
+  

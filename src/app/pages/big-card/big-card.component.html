@@ -1,14 +1,24 @@
-<div class="big-card">
-    <div class="carousel">
-      <div class="carousel-item" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide">
-        <img [src]="slide.image" [alt]="slide.alt" />
-        <div class="carousel-caption">
-          
-        </div>
-      </div>
-  
-      <button class="prev" (click)="prevSlide()">&#10094;</button>
-      <button class="next" (click)="nextSlide()">&#10095;</button>
+<div class="carousel-container">
+  <!-- Botão Anterior -->
+  <button class="nav-button prev" (click)="prevSlide()">&#10094;</button>
+
+  <!-- Carrossel com vários slides visíveis -->
+  <div class="carousel">
+    <div
+      class="carousel-item"
+      *ngFor="let slide of slides; let i = index"
+      [ngStyle]="{
+        transform: 'translateX(' + (-currentSlide * (100 / 2 + 25)) + '%)'
+      }"
+    >
+      <img
+        [src]="slide.image"
+        [alt]="slide.alt"
+        class="slide-image"
+      />
     </div>
   </div>
-  
+
+  <!-- Botão Próximo -->
+  <button class="nav-button next" (click)="nextSlide()">&#10095;</button>
+</div>

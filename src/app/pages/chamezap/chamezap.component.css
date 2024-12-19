@@ -21,7 +21,7 @@
 
 /* Botão */
 .button-content .zap-button {
-  background-color: #007bff;
+  background-color: #000; /* Cor do WhatsApp */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -30,6 +30,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  text-decoration: none; /* Remove sublinhado de links */
   transition: background-color 0.3s ease;
 }
 
@@ -39,6 +40,5 @@
 }
 
 .button-content .zap-button:hover {
-  background-color: #0056b3;
+  background-color: #1ebe57; /* Tom mais escuro para hover */
 }
-

@@ -7,12 +7,12 @@
 
 @media (max-width: 768px) {
   .carousel-item {
-    flex: 0 0 100%; /* Garante 1 slide por vez */
+    flex: 0 0 100%; /* Garante que 1 slide seja exibido por vez */
   }
 
   .slide-image {
     height: 300px; /* Ajusta a altura da imagem */
-    width: 100%;
+    width: 100%; /* Garante largura total */
   }
 }
 
@@ -22,6 +22,8 @@
   }
 
   .slide-image {
-    height: 600px; /* Altura menor para dispositivos pequenos */
+    height: 500px; /* Reduz ainda mais a altura para dispositivos pequenos */
+    object-fit: cover; /* Mantém proporções */
+    width: 100%;
   }
 }

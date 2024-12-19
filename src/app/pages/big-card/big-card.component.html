@@ -2,20 +2,16 @@
   <!-- Botão Anterior -->
   <button class="nav-button prev" (click)="prevSlide()">&#10094;</button>
 
-  <!-- Carrossel com vários slides visíveis -->
+  <!-- Carrossel -->
   <div class="carousel">
     <div
       class="carousel-item"
       *ngFor="let slide of slides; let i = index"
       [ngStyle]="{
-        transform: 'translateX(' + (-currentSlide * (100 / 2 + 25)) + '%)'
+        transform: 'translateX(' + (-currentSlide * (100 / visibleSlides)) + '%)'
       }"
     >
-      <img
-        [src]="slide.image"
-        [alt]="slide.alt"
-        class="slide-image"
-      />
+      <img [src]="slide.image" [alt]="slide.alt" class="slide-image" />
     </div>
   </div>
 

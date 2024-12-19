@@ -32,7 +32,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 10px; /* Bordas arredondadas */
+ 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
@@ -67,10 +67,10 @@
 
   .info-content,
   .content-speed {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .info-image img {
-    height: 250px; /* Ajusta altura das imagens em dispositivos móveis */
+    height: 300px; /* Ajusta altura das imagens em dispositivos móveis */
   }
 }

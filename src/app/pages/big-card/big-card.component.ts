@@ -3,15 +3,15 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 @Component({
   selector: 'app-big-card',
   templateUrl: './big-card.component.html',
-  styleUrls: ['./big-card.component.css'],
+  styleUrls: ['./big-card.component.css','./big-card.responsive.css'],
 })
 export class BigCardComponent implements OnInit, OnDestroy {
   slides = [
     { image: '../../../assets/images/carrossel1.png', alt: 'Slide 1' },
     { image: '../../../assets/images/carrossel2.png', alt: 'Slide 2' },
     { image: '../../../assets/images/carrossel3.png', alt: 'Slide 3' },
-    { image: '../../../assets/images/carrossel4.png', alt: 'Slide 4' },
-    { image: '../../../assets/images/carrossel5.png', alt: 'Slide 5' },
+    //{ image: '../../../assets/images/carrossel4.png', alt: 'Slide 4' },
+   // { image: '../../../assets/images/carrossel5.png', alt: 'Slide 5' },
   ];
 
   currentSlide = 0;

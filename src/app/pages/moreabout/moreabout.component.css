@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   background-color: #00a2e8; /* Cor de fundo azul */
-  border-radius: 8px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-bottom: 1px;
   max-width: 1550px; /* Define um tamanho máximo para o layout */
   margin: 0 auto; /* Centraliza o container */
 }
@@ -75,6 +75,7 @@
     flex-direction: column; /* Empilha os elementos */
     align-items: center;
     padding: 2rem;
+    padding-bottom: 0px;
   }
 
   .text-section {
@@ -93,6 +94,7 @@
 @media (max-width: 768px) {
   .moreabout-container {
     padding: 1rem;
+    padding-bottom: 0px;
   }
 
   h2 {

@@ -3,13 +3,14 @@
   align-items: center;
   justify-content: space-between;
   background-color: #00a2e8; /* Cor de fundo azul */
-
   border-radius: 8px;
-  padding-left: 20px;
+  padding: 20px;
+  max-width: 1550px; /* Define um tamanho máximo para o layout */
+  margin: 0 auto; /* Centraliza o container */
 }
 
 .text-section {
-  max-width: 50%; /* Texto ocupa metade do container */
+  max-width: 60%; /* Texto ocupa 60% do container */
   color: white;
   font-family: Arial, sans-serif;
 }
@@ -58,12 +59,65 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; /* Imagem ocupa 45% */
+  width: 40%; /* Aumenta a proporção para 40% */
 }
 
 .image-section img {
-  width: 50%;
+  width: 90%; /* A imagem ocupará mais espaço */
   height: auto;
   object-fit: contain;
   border-radius: 8px;
+}
+
+/* Responsividade para telas de até 1024px */
+@media (max-width: 1024px) {
+  .moreabout-container {
+    flex-direction: column; /* Empilha os elementos */
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .text-section {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .image-section img {
+    max-width: 80%; /* Ajusta para ocupar 80% da largura disponível */
+    height: auto; /* Mantém as proporções da imagem */
+  }
+}
+
+/* Responsividade para telas de até 768px */
+@media (max-width: 768px) {
+  .moreabout-container {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .highlight {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .contact-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .image-section img {
+    max-width: 100%; /* Ocupará toda a largura disponível */
+    height: auto; /* Mantém as proporções */
+  }
 }

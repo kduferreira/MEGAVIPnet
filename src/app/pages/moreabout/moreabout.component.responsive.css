@@ -1,67 +1,72 @@
 /* Responsividade para telas de até 1024px */
 @media (max-width: 1024px) {
-    .moreabout-container {
+  .moreabout-container {
       flex-direction: column; /* Empilha os elementos */
       align-items: center;
       padding: 2rem;
-    }
-  
-    .text-section {
+  }
+
+  .text-section {
       padding-right: 0;
       text-align: center;
-    }
-  
-    .image-section img {
-      max-width: 300px;
-    }
-  
-    h2 {
+  }
+
+  .image-section img {
+      max-width: 90%; /* Ajusta para ocupar 90% da largura disponível */
+      height: auto; /* Mantém as proporções da imagem */
+  }
+
+  h2 {
       font-size: 2rem;
-    }
-  
-    .highlight {
+  }
+
+  .highlight {
       font-size: 1.6rem;
-    }
-  
-    .subtitle {
+  }
+
+  .subtitle {
       font-size: 1.6rem;
-    }
-  
-    .description {
+  }
+
+  .description {
       font-size: 1rem;
-    }
-  
-    .contact-button {
+  }
+
+  .contact-button {
       padding: 0.6rem 1.2rem;
       font-size: 1rem;
-    }
   }
-  
-  /* Responsividade para telas de até 768px */
-  @media (max-width: 768px) {
-    .moreabout-container {
+}
+
+/* Responsividade para telas de até 768px */
+@media (max-width: 768px) {
+  .moreabout-container {
       padding: 1rem;
-    }
-  
-    h2 {
+  }
+
+  h2 {
       font-size: 1.6rem;
-    }
-  
-    .highlight {
+  }
+
+  .highlight {
       font-size: 1.4rem;
-    }
-  
-    .subtitle {
+  }
+
+  .subtitle {
       font-size: 1.4rem;
-    }
-  
-    .description {
+  }
+
+  .description {
       font-size: 0.9rem;
-    }
-  
-    .contact-button {
+  }
+
+  .contact-button {
       padding: 0.5rem 1rem;
       font-size: 0.9rem;
-    }
   }
-  
+
+  .image-section img {
+      max-width: 100%; /* Ocupará toda a largura disponível */
+      height: 50%; /* Mantém as proporções */
+  }
+}

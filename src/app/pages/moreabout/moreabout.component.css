@@ -48,6 +48,8 @@
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none; /* Remove sublinhado do link */
+  display: inline-block; /* Permite o comportamento de botão */
   transition: background-color 0.3s;
 }
 

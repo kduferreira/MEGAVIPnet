@@ -12,7 +12,7 @@
 .text-section {
   max-width: 60%; /* Texto ocupa 60% do container */
   color: white;
-  PADDING-LEFT: 51px;
+  /* PADDING-LEFT: 51px; */
   font-family: Arial, sans-serif;
   animation: slideInLeft 1s ease-in-out forwards;
   opacity: 0; /* Para evitar que o texto apareça antes da animação */

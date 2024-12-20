@@ -22,16 +22,24 @@
   text-decoration: none;
   color: black;
   font-weight: bold;
+  padding: 5px 10px; /* Espaçamento padrão */
+  transition: all 0.3s ease; /* Transição suave */
+  cursor: pointer;
 }
 
+/* A classe active só aplica fundo e borda inicialmente */
 .navigation ul li a.active {
-  color: white;
-  background-color: black;
-  padding: 5px 10px;
-  border-radius: 3px;
+ 
+  color: black;
+ 
 }
 
+/* Só quando passar o mouse, a borda preta será visível */
 .navigation ul li a:hover {
-  color: #007bff;
+  color: #fff; /* Cor ao passar o mouse */
+  background-color: #000; /* Fundo claro ao passar o mouse */
+  border: 5px solid black; /* Borda preta de 5px */
+  border-radius: 10px; /* Borda arredondada */
+  padding: 5px 10px; /* Padding ajustado para manter a consistência */
 }
 

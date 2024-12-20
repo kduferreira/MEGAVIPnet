@@ -51,12 +51,14 @@
 .content-speed h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .info-content p,
 .content-speed p {
   font-size: 1.1rem;
   line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Responsividade para telas menores */

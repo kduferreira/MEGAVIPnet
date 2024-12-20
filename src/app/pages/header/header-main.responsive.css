@@ -3,16 +3,19 @@
       flex-direction: column; /* Empilha logo e navegação em telas menores */
       align-items: center;
       text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
     }
   
     .navigation ul {
       flex-direction: column; /* Coloca os itens do menu em coluna */
       gap: 10px;
       padding-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
     }
   
     .navigation ul li a {
       padding: 8px;
+      font-family: Arial, Helvetica, sans-serif;
       display: block; /* Ocupa toda a largura para facilitar o clique */
     }
   }
@@ -24,11 +27,13 @@
   
     .navigation ul {
       gap: 5px;
+      font-family: Arial, Helvetica, sans-serif;
     }
   
     .navigation ul li a {
       font-size: 14px; /* Reduz o tamanho da fonte */
       padding: 5px;
+      font-family: Arial, Helvetica, sans-serif;
     }
   }
   

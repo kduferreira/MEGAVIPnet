@@ -39,7 +39,10 @@ h2 {
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  opacity: 0; /* Começa invisível */
+  transform: translateX(-50px) scale(1); /* Combina entrada com zoom inicial */
+  animation: slideIn 2s forwards; /* Animação mais lenta */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */justify-content: space-between;
   min-height: 450px; /* Ajuste a altura conforme necessário */
 }
 
@@ -54,10 +57,36 @@ h2 {
   margin: -1.5rem -1.5rem 1rem -1.5rem;
 }
 
-.plano-card:hover {
-  transform: scale(1.05);
+/* Animação de slide da esquerda para direita */
+@keyframes slideIn {
+  to {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Volta à posição original */
+  }
 }
 
+/* Delay para os cards surgirem um de cada vez */
+.plano-card:nth-child(1) {
+  animation-delay: 0.6s; /* Primeiro card */
+}
+
+.plano-card:nth-child(2) {
+  animation-delay: 1.2s; /* Segundo card */
+}
+
+.plano-card:nth-child(3) {
+  animation-delay: 1.8s; /* Terceiro card */
+}
+
+.plano-card:nth-child(4) {
+  animation-delay: 2.4s; /* Quarto card */
+}
+
+.plano-card:hover {
+  transform: translateX(0) scale(1.05); /* Combina zoom com posição fixa */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+  z-index: 10; /* Eleva o card */
+}
 .plano-header {
   background-color: #009ee3;
   color: #fff;

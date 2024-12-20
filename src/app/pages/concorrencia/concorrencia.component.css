@@ -2,6 +2,14 @@
   text-align: center;
   font-family: Arial, sans-serif;
   padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.comparison-container h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.comparison-container p{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .highlight {
@@ -53,9 +61,20 @@
 }
 
 .circle.complete {
-  background: #0078d4;
-  color: white;
+  background: #0078d4; /* Fundo azul sólido */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.circle.complete span {
+  position: static; /* Remove qualquer posição relativa/absoluta */
+  
+  font-weight: bold;
+  font-size: 18px;
+}
+
 
 .partial {
   background: conic-gradient(

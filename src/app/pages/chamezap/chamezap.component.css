@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #222;
   color: white;
-  padding: 20px;
+  padding: 50px;
 }
 
 /* Estilos para o texto */
@@ -12,16 +12,18 @@
   font-size: 20px;
   margin: 0;
   color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-content p {
   margin: 5px 0 0;
   color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Botão */
 .button-content .zap-button {
-  background-color: #000; /* Cor do WhatsApp */
+  background-color: #0087D1; /* Cor do WhatsApp */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -32,6 +34,8 @@
   align-items: center;
   text-decoration: none; /* Remove sublinhado de links */
   transition: background-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 
 .button-content .zap-button i {

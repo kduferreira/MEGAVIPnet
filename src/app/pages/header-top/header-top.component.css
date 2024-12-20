@@ -18,6 +18,7 @@
 .contact-info span {
   display: flex;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-info i {
@@ -35,6 +36,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .central-btn:hover {
